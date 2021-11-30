@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "ef5ac4dc-cd9f-44da-afe2-51cddaaa8113",
+		"name": "FileStorage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Upload File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"E:\\\\song.mp3\",\r\n   \"size\": 11610950\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/file",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete File",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/file/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Assign tags to file",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\"some-tag\"]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/file/3/tags",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file",
+						"3",
+						"tags"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove tags from file",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\"audio\"]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/file/8/tags",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file",
+						"8",
+						"tags"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List files with filtered by tags or|and names",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/file",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all tags of file",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/file/4/tags",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get list of all files in storage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/file/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"file",
+						"all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
