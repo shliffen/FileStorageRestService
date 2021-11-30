@@ -111,7 +111,7 @@ Here:
 * page - the actual records to show on the current page.
 
 * Realization:
-![pages sizes and name](docs/pages sizes and name.jpg)
+![pages&sizes&name](docs/pages&sizes&name.jpg)
 
 **Bonus**
 These items are not obligatory for implementation but if you have time and desire - you could work on them as well once you complete the main assignment. Would be good additional points for your candidature.
