@@ -109,8 +109,10 @@ returns status 200 with body:
 Here:
 * total - the total amount of files that satisfy the provided list of tags or total files count if no tags provided
 * page - the actual records to show on the current page.
+_
 
 * Realization:
+
 ![pages&sizes&name](docs/pages&sizes&name.jpg)
 
 **Bonus**
