@@ -29,6 +29,9 @@ or status 400 with error if one of the field is absent or has incorrect value (l
   "error": "error description"
 }
 
+* Realization:
+![upload file](docs/upload.jpg)
+
 2. Delete file
 DELETE  /file/{ID}
 
@@ -41,6 +44,9 @@ or 404 and body
   "error": "file not found"
 }
 
+* Realization:
+![delete file](docs/delete.jpg)
+
 3. Assign tags to file
 POST /file/{ID}/tags
 
@@ -48,6 +54,9 @@ POST /file/{ID}/tags
 
 returns status 200 and body
 {"success": true}
+
+* Realization:
+![assign tags to file](docs/assign.jpg)
 
 4. Remove tags from file
 DELETE /file/{ID}/tags
@@ -61,6 +70,9 @@ returns status 400 if one of the tags is not present on the file and body
   "success": false,
   "error": "tag not found on file"
 }
+
+* Realization:
+![remove tag from file](docs/remove-tag.jpg)
 
 5. List files with pagination optionally filtered by tags
 GET /file?tags=tag1,tag2,tag3&page=2&size=3
@@ -98,6 +110,9 @@ Here:
 * total - the total amount of files that satisfy the provided list of tags or total files count if no tags provided
 * page - the actual records to show on the current page.
 
+* Realization:
+![pages sizes and name](docs/pages sizes and name.jpg)
+
 **Bonus**
 These items are not obligatory for implementation but if you have time and desire - you could work on them as well once you complete the main assignment. Would be good additional points for your candidature.
 * at the upload automatically add tag "audio" / "video" / "document" / "image" etc. based on extension
@@ -107,21 +122,23 @@ These items are not obligatory for implementation but if you have time and desir
 All realised (sorry but just a few tests - have no free time) + added request for checking tags of desirable file (GET /file/{ID}/tags)
 
 
-** Immages of checking work capacities:**
+** Additional images of checking work capacities:**
 
-![upload file](docs/upload.jpg)
-![delete file](docs/delete.jpg)
-![assign tags to file](docs/assign.jpg)
-![remove tag from file](docs/remove-tag.jpg)
 ![all files list](docs/all files list.jpg)
+
 ![paging and size](docs/pages and sizes.jpg)
-![pages sizes and name](docs/pages sizes and name.jpg)
+
 
 ** Images of handling errors**
+
 ![error1](docs/error1.jpg)
+
 ![error2](docs/error2.jpg)
+
 ![error3](docs/error3.jpg)
+
 ![error4](docs/error4.jpg)
+
 ![error5](docs/error5.jpg)
 
 **How to run**
