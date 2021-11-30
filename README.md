@@ -2,6 +2,9 @@
 
 **Description:**
   Developing an application that allows us to store files in the cloud, categorize them with tags and search through them.
+  
+**Link to the task**
+  https://docs.google.com/document/d/1g4ULxHWuZXnzZK3OoAq30NB0LEUMkvYyAcwyI2FDTi0/edit#heading=h.a5ad4zfbwpvb
 
 **Requirements**
 * As a data storage, please use Elasticsearch.
